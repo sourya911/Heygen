@@ -6,7 +6,7 @@ const Instantavt = (props) => {
   return (
     <>
     
-      <div className="flex md:flex-col items-start gap-3">
+      <div className="lg:flex md:flex-col items-start mt-5 gap-3">
         <h1 className="text-white text-6xl">{props.head}</h1>
         <p className="text-3xl text-[#bbadff]">{props.txt}</p>
         <div className="flex justify-center items-center bg-mn p-5">
@@ -15,12 +15,13 @@ const Instantavt = (props) => {
             <FaArrowRight />
           </button>
         </div>
-        <button className="flex items-center justify-around absolute  p-4 bg-play2 rounded-md m-2 gap-3 mt-52 ml-4">
+        <button className="flex items-center justify-around absolute  p-4 bg-play2 rounded-md m-2 gap-3 mb-4 lg:mt-52 ml-4">
             <FaPlay /> Demo
           </button>
         <video 
           src={props.lin}
           type="video/mp4"
+          className=""
           controls autoPlay muted
         />
       </div>

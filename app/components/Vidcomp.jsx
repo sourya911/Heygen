@@ -4,7 +4,7 @@ import { FaPlay } from "react-icons/fa";
 const Vidcomp = (props) => {
   return (
     <>
-      <div class="max-w-md card-bg border border-gray-200 rounded-xl shadow purple-sec">
+      <div class="max-w-md md:w-[200px] card-bg border border-gray-200 rounded-xl shadow purple-sec ">
         <a href={props.lin}>
           <video
             autoPlay

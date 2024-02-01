@@ -39,7 +39,7 @@ const Safety = () => {
         <div className="container flex flex-col">
             {select.map((obj)=>{
                 return (
-                    <div className="flex gap-1">
+                    <div className="flex gap-1 items-start justify-normal">
                     <p className="text-3xl text-green-400 w-40 mt-3"><FaCircleCheck/></p>
                     <div className="p-3">
                         <p>{obj.t1}</p>

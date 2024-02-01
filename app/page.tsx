@@ -1,5 +1,6 @@
 // pages/index.js
 import Head from "next/head";
+import { FaArrowRight } from "react-icons/fa";
 import Buttonn from "./components/Buttonn";
 import Videos from "./components/Videos";
 import Vidcomp from "./components/Vidcomp";
@@ -24,10 +25,8 @@ import LastVideo from "./components/Lastvideo";
 
 const Home = () => {
   return (
-    <div className=" mx-auto p-8 bg-grrr w-[1780px] md:w-[880px] sm:w-[330px] container">
-      <Head>
-        <title>Hygen - Home</title>
-      </Head>
+    <div className=" mx-auto p-8 bg-grrr max-w-[1780px] md:w-[880px] sm:w-[330px] container">
+     
 
       {/* Navigation */}
 
@@ -128,7 +127,14 @@ const Home = () => {
           Effortlessly produce studio quality videos with AI-generated avatars
           and voices.
         </p>
-        <Buttonn />
+
+        <div className="flex md:flex-col items-center w-[300px] mx-auto mt-[-60px] justify-center">
+        <button className="flex mt-12 items-center w-full justify-center p-3 bg-mn gap-2">
+         
+          Get started for free
+          <FaArrowRight />
+        </button>
+      </div>
         <p className="text-gray-800">No credit card needed</p>
       </div>
 
@@ -154,17 +160,19 @@ const Home = () => {
       {/* Features */}
       <section
         id="text-vides"
-        className=" flex g-1   items-center justify-center"
+        className=" flex g-1 max-w-[77.5rem] items-center justify-center"
       >
-        <h1 className="text-9xl max-w-[416px] tracking-wide">
+        <div className="md:flex-col md:items-center md:gap-5 md:pt-4 lg:flex">
+        <h1 className="text-6xl max-w-[416px] tracking-wide">
           Create videos for every team
         </h1>
         <h3 className="text-2xl">
           Engage, explain, entertain - AI-Powered video creation for any need.
         </h3>
+        </div>
       </section>
       <div className="gap-3">
-        <section className="flex justify-center gap-28 ">
+        <section className="flex lg:gap-28 md:gap-24 justify-center gap-28 ">
           <Vidcomp 
             t1="Sales outreach"
             t2="that converts"
@@ -178,7 +186,7 @@ const Home = () => {
             lin="https://resource.heygencdn.com/homepage/usecase_productmarketing2.mp4"
           />
         </section>
-        <section className="flex gap-28 align-bottom justify-center">
+        <section className="flex lg:gap-28 md:gap-24 align-bottom justify-center">
           <Vidcomp
             t1="Content marketing"
             t2="that engage"
@@ -229,7 +237,7 @@ const Home = () => {
       </section>
       {/* AI Voices */}
 
-      <section className="container">
+      <section className="container mb-8">
         <Avtar />
       </section>
 

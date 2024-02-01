@@ -47,7 +47,7 @@ const Aivoice = () => {
         <Buttonn />
 
         <section className="flex mt-12 justify-end relative flex-col gap-3 ">
-          <div className="bg-white w-full container h-auto p-10 max-w-1/2 rounded-xl pb-1">
+          <div className="bg-white container h-auto p-10 max-w-[100%] rounded-xl pb-1 overflow-hidden">
             <h1 className="text-black text-2xl font-semibold">
               <span className="text-mn">300+</span> voices
             </h1>

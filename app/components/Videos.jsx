@@ -7,10 +7,10 @@ function Videos(props) {
   // const [img,setImg]=useState("https://resource.heygencdn.com/homepage/header_video_josh2.mp4")
   return (
     <>
-      <div className="content">
-        <div className=" rounded-lg  p-4 flex flex-col z-[500] items-start w-30 mb-1  max-w-[350px] txt-mn">
+      <div className="container">
+        <div className=" rounded-lg  p-4 flex flex-col z-[500] items-start w-72 mb-1 txt-mn">
           {/* <>{img}</> */}
-          <h3 className="text-mn m-3 ">sciript</h3>
+          <h3 className="text-mn m-3  ">sciript</h3>
           <div className="text-black font-medium">
             <Typewriter options={{
               strings:["Hey there! Welcome to HeyGen - where you can easily create fun,high-quality videos using our AI avatars and voices. In just a few clicks, you can generate custom videos for social media,presentations, education and many more!"],
@@ -21,7 +21,7 @@ function Videos(props) {
             
           </div>
         </div>
-        <div className="relative w-[800px] h-[400px] overflow-hidden">
+        <div className="hero-vid ">
           <video
             className="rounded-lg absolute top-0 left-0 w-[100%] h-[100%] object-cover vd"
             controls

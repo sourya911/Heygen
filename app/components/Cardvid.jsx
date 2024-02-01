@@ -6,7 +6,8 @@ import Buttonn from "./Buttonn";
 const Cardvid = () => {
   return (
     <>
-      <div className="card-vd">
+    <div className="lg:flex md:flex-col">
+      <div className="card-vd md:w-96">
         <a href="https://resource.heygencdn.com/website/vera_remove/howitworks_new2.mp4">
           <button className="flex items-center justify-around absolute z-50 p-4 bg-play2 rounded-md m-2">
             <FaPlay /> Demo
@@ -36,6 +37,7 @@ const Cardvid = () => {
           <Buttonn />
         </div>
       </section>
+      </div>
     </>
   );
 };

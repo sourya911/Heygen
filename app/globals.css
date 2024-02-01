@@ -196,3 +196,15 @@ body {
   object-fit: cover;
   position: absolute;
 }
+
+.hero-vid{
+  aspect-ratio: 16/9;
+  transform: scale(1.01);
+  height: auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+  display: flex;
+  position: relative;
+}
