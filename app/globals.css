@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-grrr {
+  background-color: #e6e0f4;
+}
+
+.text-mn {
+  color: #7559ff;
+}
+
+.bg-mn {
+  background-color: #7559ff;
+  border-radius: 20px;
+}
+
+.bg-mn:hover {
+  background-color: #7559aa;
+}
+
+.card-bg {
+  background-color: #0b071e;
+}
+
+.text-bg2 {
+  color: #0b071e;
+}
+
+.bg-play {
+  background-color: rgba(117, 89, 255, .1);
+}
+
+.bg-play2 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-play2:hover {
+  background-color: #7559aa;
+  color: white;
+}
+
+.bg-mn2 {
+  background-color: #6362dc;
+}
+
+.card-x {
+  min-width: 373px;
+  height: 655px;
+  padding: 30px;
+  margin-left: 20px;
+  overflow: hidden;
+  /* position: fixed; */
+  /* z-index: 999; */
+  line-height: 1.3;
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-x h1 {
+  font-size: 64px;
+  margin-top: 18px;
+  margin-left: 1px;
+}
+
+.card-x h2 {
+  font: bold;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.bg-sc {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#stcr {
+  background-image: url("https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/6585097359bc1375d200a6b0_footer_new-p-800.webp");
+  width: full;
+  height: 400px;
+  /* opacity: 0.3; */
+  display: block;
+  overflow: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrol {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 10s linear infinite;
+}
+
+.txt-mn {
+  transform: translate(40px, 40px);
+  z-index: 222;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(30px);
+
+}
+
+.txt-mn h3 {
+  font-size: large;
+}
+
+.txt-mn p {
+  font-size: larger;
+}
+
+.vd {
+  z-index: 111;
+}
+
+.vdd {
+  background-image: url("https://assets-global.website-files.com/63fdcbe48aa020c0a5493507/656c4edf1c49ad5ab27cd37b_blur-purple.svg");
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.purple-sec {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 91%, #0c062c), linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--heygen--primary)50%);
+}
+
+.card-vd {
+  position: relative;
+
+}
+
+.card-vd button {
+  position: absolute;
+  transform: translate(2px, 40px);
+}
+
+.demo {
+  position: absolute;
+  transform: translate(-10px, 20px);
+}
+
+.demmo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 180px;
+  height: 264px;
+}
+
+.demmo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vid {
+  height: 126px;
+  width: 329px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+  position: absolute;
+}
